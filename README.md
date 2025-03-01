@@ -1,6 +1,6 @@
 # azure_function_demo_project
 
-This project involves creating an Azure Function on a local machine. The function is triggered by Kafka, making it a subscriber to a Kafka topic. It then publishes the data it receives from Kafka into a local Azure Blob Storage (using Azurite).
+This project (AzureFunctionDemoApp) involves creating an Azure Function on a local machine. The function is triggered by Kafka, making it a subscriber to a Kafka topic. It then publishes the data it receives from Kafka into a local Azure Blob Storage (using Azurite).
 
 ### Pre-requisites
 
