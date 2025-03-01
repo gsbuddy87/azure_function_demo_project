@@ -1,6 +1,6 @@
 # azure_function_demo_project
 
-This project (AzureFunctionDemoApp) involves creating an Azure Function on a local machine. The function is triggered by Kafka, making it a subscriber to a Kafka topic. It then publishes the data it receives from Kafka into a local Azure Blob Storage (using Azurite).
+This project (AzureFunctionDemoApp) involves creating an Azure Function on a local machine. The function is triggered by Kafka, making it a subscriber to a Kafka topic. It then publishes the data it receives from Kafka (running in local machine) into a local Azure Blob Storage (using Azurite). No Azure connection is needed here.
 
 ### Pre-requisites
 
@@ -35,6 +35,6 @@ This project (AzureFunctionDemoApp) involves creating an Azure Function on a loc
 
 ### Note
 
--	This is just for helping developers who are new in python and azure function, but the codebase is not production ready. Developer should change it as per the needs.
+-	This is just for helping developers who are new in python and azure function, but the codebase is not production ready. Developer should not just copy-paste it for production environment.
 -	Instead of apache kafka, an eventhub emulator can also be used here -  https://learn.microsoft.com/en-us/azure/event-hubs/test-locally-with-event-hub-emulator?tabs=automated-script%2Cusing-kafka
 -	To understand kafka-container-id, docker ps -a command can be used
