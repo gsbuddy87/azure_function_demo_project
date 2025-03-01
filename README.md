@@ -19,8 +19,7 @@ This project (AzureFunctionDemoApp) involves creating an Azure Function on a loc
 
   - Start Azurite (Azure Storage Emulator) if it's not already running.
 ![img_5.png](img_5.png)
-  -	Create a Kafka Topic
-      Run the following command to create a topic in the local Kafka instance:
+  -	The following command can be run to create a topic in the local Kafka instance:
       `docker exec -it <kafka-container-id> /opt/kafka/bin/kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic my-topic`.
        o	The following command can be used to test the message publish:
        `docker exec -it <kafka-container-id> /opt/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic my-topic`.
